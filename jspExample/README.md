@@ -1,3 +1,3 @@
 # JSP
 
-<img src="https://github.com/merveylmz/ScreenShots/blob/master/Web/hibernate.22.7.17.png" width="900"> 
+<img src="https://github.com/merveylmz/ScreenShots/blob/master/Web/jsp.18.7.17.png" width="900"> 
