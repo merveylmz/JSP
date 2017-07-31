@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Veritabanı bağlantı ayarları -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/operations</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">135679</property>
+        <property name="hibernate.connection.characterEncoding">ISO-8859-1</property>
+
+        <!-- SQL cümlecikleri oluşturma işlemi burada yapılır -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Bütün sql sorguları consola yazılsın -->
+        <property name="show_sql">false</property>
+
+        <!-- Bağlantı havuzunda halihazırda tutulan bağlantı sayısı -->
+        <property name="hibernate.connection.pool_size">5</property>
+
+        <!-- 	Mapping Yapılan Sınıflarımız -->
+        <mapping class="Pojo.Employee"></mapping>
+        <mapping class="Pojo.Department"></mapping>
+        <mapping class="Pojo.Meeting"></mapping>
+    </session-factory>
+</hibernate-configuration>
